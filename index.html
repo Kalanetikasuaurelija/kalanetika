@@ -2,22 +2,55 @@
 <html lang="lt">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalanetika su Aurelija</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>Kalanetika su Aurelija – registracija</title>
   <style>
-    body { font-family: sans-serif; background-color: #F1F2E4; color: #33423F; text-align: center; padding: 40px 20px; }
-    .btn { display: inline-block; padding: 16px 32px; background: #4D625E; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; font-size: 18px; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; }
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      height: 100dvh;
+      background: #f1f2e4;
+      color: #33423f;
+      font: 14px/1.5 Arial, sans-serif;
+    }
+    .pagalba {
+      flex: 0 0 auto;
+      padding: 10px 16px;
+      padding-top: max(10px, env(safe-area-inset-top));
+      text-align: center;
+      border-bottom: 1px solid #d5d8ca;
+    }
+    .pagalba a {
+      display: inline-block;
+      padding: 10px;
+      color: #33423f;
+      font-weight: bold;
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      flex: 1 1 auto;
+      min-height: 0;
+      border: 0;
+      background: #f1f2e4;
+    }
   </style>
-  <script>
-    // Automatinis nukreipimas tiesiai į Google skriptą
-    setTimeout(function() {
-      window.location.href = "https://script.google.com/macros/s/AKfycbydekjILpvlUlx2CQGBjRmmRgSedXpKF9pK8G_JYDN1UnxhVbef0Q-apj17f0u6T0ISGA/exec";
-    }, 800);
-  </script>
 </head>
 <body>
-  <h2>Kraunamas tvarkaraštis...</h2>
-  <p>Jei puslapis neatsidaro automatiškai, paspauskite mygtuką žemiau:</p>
-  <a href="https://script.google.com/macros/s/AKfycbydekjILpvlUlx2CQGBjRmmRgSedXpKF9pK8G_JYDN1UnxhVbef0Q-apj17f0u6T0ISGA/exec" class="btn">Atidaryti tvarkaraštį</a>
+  <div class="pagalba">
+    Neatsidaro registracija?
+    <a href="https://script.google.com/macros/s/AKfycbydekjILpvlUlx2CQGBjRmmRgSedXpKF9pK8G_JYDN1UnxhVbef0Q-apj17f0u6T0ISGA/exec" target="_blank" rel="noopener noreferrer">Atidaryti atskirai</a>
+    <div>Jei naudojate „Facebook“, jo meniu pasirinkite atidaryti išorinėje naršyklėje.</div>
+  </div>
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbydekjILpvlUlx2CQGBjRmmRgSedXpKF9pK8G_JYDN1UnxhVbef0Q-apj17f0u6T0ISGA/exec"
+    title="Kalanetikos treniruočių registracija"
+    loading="eager"
+    referrerpolicy="no-referrer">
+  </iframe>
 </body>
 </html>
