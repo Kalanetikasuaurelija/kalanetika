@@ -2,25 +2,78 @@
 <html lang="lt">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
   <meta name="referrer" content="no-referrer">
-  <meta name="description" content="Kalanetika su Aurelija: treniruočių tvarkaraštis, registracija ir abonementai.">
+
+  <meta
+    name="description"
+    content="Kalanetika su Aurelija: treniruočių tvarkaraštis, registracija ir abonementai."
+  >
+
   <title>Kalanetika su Aurelija – registracija</title>
+
+  <!-- Outfit šriftas -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+  >
+
+  <!-- Svetainės stiliai -->
   <link rel="stylesheet" href="./assets/styles.css?v=20261016">
+
+  <style>
+    body,
+    button,
+    input,
+    select,
+    textarea {
+      font-family: "Outfit", sans-serif;
+    }
+
+    /* Atsiskaitymo kortelės aprašymas lygiuojamas abipus.
+       Antraštės ir kitų kortelių šis nustatymas nekeičia. */
+    div.bg-\[\#C98A85\]\/10 > p.text-\[\#33423F\] {
+      text-align: justify;
+      text-align-last: left;
+      overflow-wrap: anywhere;
+    }
+
+    /* Pradinis pranešimas, kol kraunama programėlė */
+    .loading-message {
+      padding: 32px;
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+
   <script src="./config.js?v=3" defer></script>
   <script src="./assets/app.js?v=20261016" defer></script>
 </head>
+
 <body>
   <div id="root">
-    <main style="padding:32px;font:18px/1.6 Arial,sans-serif;max-width:600px;margin:auto">
+    <main class="loading-message">
       <h1>Kalanetika su Aurelija</h1>
       <p>Kraunama registracija…</p>
-      <p>Jei šis tekstas lieka matomas, perkraukite puslapį. Jei nepavyksta, susisiekite su Aurelija.</p>
+      <p>
+        Jei šis tekstas lieka matomas, perkraukite puslapį.
+        Jei nepavyksta, susisiekite su Aurelija.
+      </p>
     </main>
   </div>
-  <noscript>Registracijai įjunkite JavaScript savo naršyklėje.</noscript>
+
+  <noscript>
+    Registracijai įjunkite JavaScript savo naršyklėje.
+  </noscript>
 </body>
 </html>
